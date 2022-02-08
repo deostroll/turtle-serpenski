@@ -83,26 +83,13 @@ if __name__ == '__main__':
 
     if is_win_height_small:
         turtle.up()
-        padding = 200
-        turtle.setposition(-side_length/2, side_length/2)
+        turtle.setposition(-side_length/2, side_length/2 - 5)
 
         turtle.down()
-        # turtle.forward(side_length - padding/2)
-        # turtle.right(90)
-        # turtle.forward(side_length - padding/2)
-        # turtle.right(90)
-        # turtle.forward(side_length - padding/2)
-        # turtle.right(90)
-        # turtle.forward(side_length - padding/2)
+        turtle.right(90); turtle.fd(side_length - 23)
         
-        # turtle.setpos((-win_dim[0]/2 + padding, win_dim[1]/2 - padding))
-        # print(turtle.position())
-        # turtle.down()
-        # turtle.setpos( (win_dim[0] - padding, -win_dim[1] + padding) )  
-        # print(turtle.position())
-
         
-    # window.mainloop()
+    window.mainloop()
 
     # debounce(window, '<Configure>', lambda: print('done'), 5)
     # window.mainloop()
